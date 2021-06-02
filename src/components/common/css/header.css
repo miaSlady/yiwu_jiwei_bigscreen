@@ -1,0 +1,37 @@
+.header {
+  width: 100vw;
+  height: 7vh;
+  background: url("../img/header.png") no-repeat;
+  background-size: 100vw 7vh;
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header .l {
+  margin-left: 62px;
+  display: flex;
+  position: relative;
+  top: -1vh;
+}
+.header .l > p {
+  margin-right: 28px;
+  color: #6BFFFF;
+  cursor: pointer;
+  display: flex;
+}
+.header .l > p img {
+  width: 24px;
+  height: 24px;
+  margin-right: 8px;
+}
+.header .c {
+  font-size: 48px;
+  color: #e6ffff;
+  font-weight: 600;
+}
+.header .r {
+  margin-right: 122px;
+}

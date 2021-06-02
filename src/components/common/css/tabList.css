@@ -1,0 +1,52 @@
+.tab {
+  width: 100vw;
+  position: absolute;
+  left: 0;
+  top: 7vh;
+  height: 7vh;
+  margin-top: 2vh;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  padding: 0 60px;
+  align-items: center;
+}
+.tab .tabList {
+  display: flex;
+  flex-wrap: nowrap;
+}
+.tab .tabList > li {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  cursor: pointer;
+  font-size: 12px;
+  color: rgba(51, 216, 230, 0.6);
+  text-align: center;
+  margin-right: 20px;
+  transition: all 1s linear;
+}
+.tab .tabList > li img {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  margin: 0 auto 1vh;
+}
+.tab .tabList > li.active {
+  font-size: 16px;
+  color: #33d8e6;
+}
+.tab .tabList > li.active img {
+  width: 60px;
+  height: 60px;
+}
+.tab .time {
+  color: #e6ffff;
+  font-size: 24px;
+  font-weight: 500;
+}
+.tab .time > p:nth-child(1) {
+  font-size: 30px;
+  font-weight: 600;
+}

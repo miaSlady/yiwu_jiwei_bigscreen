@@ -1,0 +1,53 @@
+.town{
+  position: absolute;
+  top:19vh;
+  left:590px;
+  width: 750px;
+  height: 80vh;
+  &>.title{
+    display: flex;
+    align-items: center;
+    font-size: 24px;
+    margin-left: 10px;
+    &>img{
+      width: 20px;
+      height: 30px;
+      margin-right: 16px;
+    }
+  }
+  &>.detail{
+    position: absolute;
+    left:16vw;
+    top:-4vh;
+    display: flex;
+    li{
+      margin-right: 50px;
+      color: #5dffff;
+      &>p:nth-child(1){
+        font-size: 16px;
+      }
+      &>p:nth-child(2){
+        font-size: 40px;
+        font-family: DINAlternate, DINAlternate-Bold;
+        font-weight: 700;
+      }
+    }
+  }
+  &>.scrollBox{
+    height: 76vh;
+    overflow-y: scroll;
+    &>.townList{
+      display: flex;
+      flex-wrap: wrap;
+      li{
+        width: 150px;
+        height: 150px;
+        margin-bottom: 2vh;
+        background: url("../img/villageItem.png") no-repeat;
+        background-size: 150px 150px;
+      }
+    }
+  }
+  
+  
+}

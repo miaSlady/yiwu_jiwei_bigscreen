@@ -1,0 +1,36 @@
+.village{
+  position: absolute;
+  top:19vh;
+  left:600px;
+  width: 740px;
+  height: 80vh;
+  &>.title{
+    display: flex;
+    align-items: center;
+    font-size: 24px;
+    margin-bottom: 3vh;
+    &>img{
+      width: 20px;
+      height: 30px;
+      margin-right: 16px;
+    }
+  }
+  &>.detail{
+    display: flex;
+    flex-direction: column;
+    li{
+      margin-right: 50px;
+      color: #5dffff;
+      margin-bottom: 2vh;
+      &>p:nth-child(1){
+        font-size: 16px;
+      }
+      &>p:nth-child(2){
+        font-size: 40px;
+        font-family: DINAlternate, DINAlternate-Bold;
+        font-weight: 700;
+      }
+    }
+  }
+
+}

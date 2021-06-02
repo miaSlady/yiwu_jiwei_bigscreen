@@ -1,0 +1,347 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: PingFangSC-Regular, sans-serif;
+}
+
+ul li {
+  list-style: none;
+}
+
+[v-cloak] {
+  display: none !important;
+}
+
+#app {
+  overflow-x: hidden;
+  overflow-y: hidden;
+  /*解决ios上滑动不流畅*/
+  -webkit-overflow-scrolling: touch;
+  padding-bottom: 25px;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+.hr {
+  display: block;
+  height: 1PX;
+  background: #F2F2F2;
+}
+
+.fex_pic_color {
+  background-color: rgba(16, 39, 51, .6) !important;
+}
+
+p, span {
+  word-wrap: break-word;
+  margin-bottom: 0;
+}
+
+.nothing {
+  height: 100%;
+  font-size: 40px;
+  line-height: 30vh;
+  text-align: center;
+}
+
+html {
+  color: white;
+  font-size: 12px;
+  color: #e6ffff;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-text-size-adjust: none;
+  overflow: hidden;
+  -webkit-touch-callout: text;
+  /*系统默认菜单被禁用*/
+  -webkit-user-select: text;
+  /*webkit浏览器*/
+  /*早期浏览器*/
+  -moz-user-select: text;
+  /*火狐*/
+  -ms-user-select: text;
+  /*IE10*/
+  user-select: text;
+  font-family: PingFangSC-Regular, sans-serif;
+}
+
+#app {
+  height: 100vh;
+}
+
+html, body {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+s {
+  text-decoration: none;
+}
+
+img {
+  border: none;
+  display: block;
+}
+
+.inline {
+  li {
+    display: inline-block;
+  }
+}
+
+li {
+  list-style-type: none;
+  margin: 0;
+  padding: 0
+}
+
+a, button, input {
+  text-decoration: none;
+  background: none;
+  outline: none;
+  border: 0px;
+  -webkit-tap-highlight-color: transparent;
+  background: transparent;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+}
+
+.absolute {
+  position: absolute;
+}
+
+.relative {
+  position: relative;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.flex-justify {
+  justify-content: center;
+}
+
+.flex-items {
+  align-items: center;
+}
+
+.clearfix:after {
+  content: '';
+  display: block;
+  clear: both;
+  // height: 0;;
+}
+.r10{
+  margin-right: 10px;
+}
+.r20{
+  margin-right: 20px;
+}
+.b10{
+  margin-bottom: 1vh;
+}
+
+/**************************************大屏一些公共样式*********************************************************************/
+.leftSide,.rightSide{
+  position: absolute;
+  top:17vh;
+  width: 590px;
+  height: 81vh;
+  z-index: 10;
+  box-sizing: border-box;
+  // background: pink;
+}
+.leftSide{
+  left:0;
+}
+.rightSide{
+  right:0;
+}
+.m_box{
+  width: 100%;
+  height: 100%;
+  background: url("../img/box.png") no-repeat;
+  background-size: 100% 100%;
+}
+//镇弹框
+.m_popBox{
+  background: url("../../pages/typeView/center/img/box.png") no-repeat;
+  background-size: 100% 100%;
+  padding:2vh 24px;
+  color: #e6ffff;
+  min-width: 300px;
+  &>p{
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 1vh;
+  }
+  &>ul{
+    display: flex;
+    flex-wrap: nowrap;
+    li{
+      color: #5dffff;
+      min-width: 120px;
+      &>p:nth-child(1){
+        font-size: 14px;
+      }
+      &>p:nth-child(2){
+        font-size: 30px;
+        font-weight: 600;
+      }
+      .per{
+        font-size: 12px;
+      }
+    }
+    &>li:nth-child(1){
+      margin-right: 20px;
+    }
+  }
+}
+//时间选择器
+.m_dropDown{
+  position: relative;
+  &>span{
+    font-size: 8px;
+    color:#8BCFFF;
+    padding:.2vh .5vw;
+    border: 1px solid rgba(139, 207, 255, .3);;
+    border-radius: 1px;
+    cursor: pointer;
+  }
+  .hideBox{
+    position: absolute;
+    left: 0vw;
+    top: 0;
+    opacity: 0;
+    width: 100% !important;
+    height: 100%;
+    cursor: pointer;
+    .el-input__inner{
+      cursor: pointer;
+    }
+  }
+  
+}
+
+/***********************************************element-ui样式修改****************************************************************/
+.el-popper[x-placement^=right] .popper__arrow:after{
+  content:'' !important;
+  border-right-color:transparent !important;
+}
+.el-popper[x-placement^=right] .popper__arrow{
+  border-right-color:transparent !important;
+}
+.el-popover{
+  background: transparent !important;
+  border:none !important;
+  margin-left:0 !important;
+}
+.el-message__icon{
+  font-size: 1.042vw !important;
+}
+
+.el-picker-panel {
+  background: #071A56 !important;
+  border: 1PX solid #0091FF !important;
+}
+
+.el-date-picker__header--bordered {
+  border-bottom: 1PX solid #0091FF !important;
+}
+
+.el-month-table td .cell, .el-date-picker__header-label, .el-picker-panel__icon-btn {
+  color: #0091FF !important;
+}
+
+.el-month-table td .cell:hover, .el-year-table td .cell:hover, .el-year-table td.current:not(.disabled) .cell {
+  color: #E6D349 !important;
+}
+
+.el-popper[x-placement^=bottom] .popper__arrow:after {
+  border-bottom-color: #0091FF !important;
+  display: none;
+}
+
+.el-month-table td.disabled .cell {
+  background-color: transparent !important;
+  color: #c0c4cc !important;
+}
+.el-month-table td.in-range div, .el-month-table td.in-range div:hover{
+   background-color: #bfe3ff !important;
+}
+.el-month-table td.end-date .cell, .el-month-table td.start-date .cell{
+  color:#fff !important;
+}
+.el-popper[x-placement^=top] .popper__arrow{
+  display: none !important;
+}
+.el-pagination button:disabled,.el-pager li,.el-pagination .btn-next, .el-pagination .btn-prev{
+  background-color: #23316E !important;
+  color: #fff !important;
+}
+.el-pager li.active{
+  background: #1677ff !important;
+}
+.el-pager .more:before{
+  content:'...' !important;
+}
+
+.hideCarousel .el-carousel__indicators--vertical{
+  display: none !important;
+}
+
+//element 级联选择器样式修改（选辖区的，可多选）
+.el-cascader__dropdown{
+  background-color:  #23316E !important;
+  border:1px solid  #0091FF !important;
+}
+.el-cascader-menu{
+  color: #fff !important;
+  border-right:1px solid  #0091FF !important;
+}
+.el-cascader__tags .el-tag .el-icon-close{
+  background:transparent !important;
+  color: #0091FF !important;
+}
+.el-cascader-node:not(.is-disabled):focus, .el-cascader-node:not(.is-disabled):hover{
+  background:transparent !important;
+}
+.el-input__inner{
+  color: #0091FF !important;
+  background: transparent !important;
+  border: 1px solid #054c61 !important;
+  box-shadow: 2px 2px 5px#054c61 inset, 2px 2px 5px #054c61 !important;
+}
+.el-popper[x-placement^=bottom] .popper__arrow{
+  border-bottom-color:#0091FF !important;
+}
+.el-cascader__tags .el-tag:not(.is-hit){
+  border-color:#0091FF !important;
+}
+.el-cascader__tags .el-tag{
+  background:transparent !important;
+}
+.el-tag.el-tag--info{
+  color: #0091FF !important;
+}
+
+
+
+
+
+
+
+
+
+
+

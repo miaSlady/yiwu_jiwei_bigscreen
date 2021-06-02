@@ -1,0 +1,81 @@
+.m_box{
+  padding:2vh 40px;
+}
+.leftSide{
+  padding-left: 30px;
+  padding-top: 1vh;
+  .box1{
+    height: 29vh;
+    margin-bottom: 2vh;
+    .list{
+      position: relative;
+      display: flex;
+      flex-wrap: wrap;
+      li{
+        width: 220px;
+        display: flex;
+        align-items: flex-end;
+        &>div:nth-child(1){
+          flex:1;
+          &>p:nth-child(1){
+            font-size: 30px;
+            font-family: DINAlternate, DINAlternate-Bold;
+            font-weight: 700;
+            color: #5dffff;
+          }
+          &>p:nth-child(2){
+            font-size: 12px;
+          }
+        }
+        &>div:nth-child(2){
+          width: 110px;
+          height: 20px;
+          position: relative;
+          top:-1vh;
+          display: flex;
+          img{
+            position: absolute;
+            left:0;
+            top:0;
+            width: 110px;
+            height: 20px;
+          }
+          .s1{
+            width: 0;
+            height: 20px;
+            background: #5DFFFF;
+          }
+          .s2{
+            flex:1;
+            background: #E6FFFF;
+          }
+        }
+      }
+      &>li:nth-child(odd){
+        margin-right: 20px;
+      }
+    }
+  }
+  .box2{
+    height: 50vh;
+    .chart1{
+      height: 23vh;
+    }
+    .chart2{
+      height: 20vh;
+      // background: pink;
+    }
+  }
+}
+.rightSide{
+  .box1{
+    height: 54vh;
+    .chart1{
+      height: 24vh;
+    }
+    .chart2{
+      height: 20vh;
+    }
+  }
+
+}

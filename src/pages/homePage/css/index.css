@@ -1,0 +1,7 @@
+.homePage {
+  width: 100vw;
+  height: 100vh;
+  background: url("../img/bg.png") no-repeat;
+  background-size: 100vw 100vh;
+  position: relative;
+}

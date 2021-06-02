@@ -1,0 +1,103 @@
+{
+  "name": "map_demo",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "build": "vue-cli-service build",
+    "lint": "vue-cli-service lint",
+    "dev": "vue-cli-service serve --sourcemap"
+  },
+  "dependencies": {
+    "add": "^2.0.6",
+    "axios": "^0.19.0",
+    "copy-webpack-plugin": "^6.0.3",
+    "core-js": "^2.6.5",
+    "cssnano": "^4.1.10",
+    "cssnano-preset-advanced": "^4.0.7",
+    "echarts": "^4.9.0",
+    "element-ui": "^2.12.0",
+    "moment": "^2.29.1",
+    "postcss-aspect-ratio-mini": "^1.0.1",
+    "postcss-cssnext": "^3.1.0",
+    "postcss-import": "^12.0.1",
+    "postcss-loader": "^3.0.0",
+    "postcss-px-to-viewport": "^1.1.1",
+    "postcss-url": "^8.0.0",
+    "postcss-viewport-units": "^0.1.6",
+    "postcss-write-svg": "^3.0.1",
+    "register-service-worker": "^1.6.2",
+    "v-viewer": "^1.4.2",
+    "viewerjs": "^1.9.0",
+    "vue": "^2.6.10",
+    "vue-clipboard2": "^0.3.1",
+    "vue-count-to": "^1.0.13",
+    "vue-router": "^3.1.3",
+    "vue-seamless-scroll": "^1.1.23",
+    "yarn": "^1.22.10"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "^3.11.0",
+    "@vue/cli-plugin-eslint": "~4.5.0",
+    "@vue/cli-service": "^3.11.0",
+    "@vue/eslint-config-standard": "^5.1.2",
+    "babel-eslint": "^10.1.0",
+    "babel-plugin-transform-remove-console": "^6.9.4",
+    "eslint": "^6.7.2",
+    "eslint-plugin-import": "^2.20.2",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-standard": "^4.0.0",
+    "eslint-plugin-vue": "^6.2.2",
+    "less": "^3.10.3",
+    "less-loader": "^5.0.0",
+    "vue-template-compiler": "^2.6.10"
+  },
+  "eslintConfig": {
+    "root": true,
+    "env": {
+      "node": true
+    },
+    "extends": [
+      "plugin:vue/essential",
+      "eslint:recommended",
+      "@vue/standard"
+    ],
+    "rules": {},
+    "parserOptions": {
+      "parser": "babel-eslint"
+    }
+  },
+  "postcss": {
+    "plugins": {
+      "postcss-import": {},
+      "postcss-url": {},
+      "postcss-aspect-ratio-mini": {},
+      "postcss-write-svg": {
+        "utf8": false
+      },
+      "postcss-cssnext": {},
+      "postcss-px-to-viewport": {
+        "viewportWidth": 1920,
+        "viewportHeight": 1080,
+        "unitPrecision": 3,
+        "viewportUnit": "vw",
+        "selectorBlackList": [
+          ".ignore",
+          "hairlines"
+        ],
+        "minPixelValue": 1,
+        "mediaQuery": false
+      },
+      "postcss-viewport-units": {},
+      "cssnano": {
+        "preset": "advanced",
+        "autoprefixer": false,
+        "postcss-zindex": false
+      }
+    }
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions"
+  ]
+}

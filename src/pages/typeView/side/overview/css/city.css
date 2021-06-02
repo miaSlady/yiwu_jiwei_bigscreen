@@ -1,0 +1,144 @@
+.m_box {
+  padding: 2.5vh 40px;
+}
+.leftSide {
+  padding-left: 36px;
+  padding-top: 1vh;
+}
+.leftSide .box1 {
+  height: 52vh;
+  margin-bottom: 2vh;
+}
+.leftSide .box1 .content1 {
+  height: 23vh;
+}
+.leftSide .box1 .content2 > p {
+  font-size: 16px;
+}
+.leftSide .box1 .content2 > div {
+  height: 17vh;
+}
+.leftSide .box2 {
+  height: 27vh;
+}
+.leftSide .box2 .chart {
+  height: 18vh;
+}
+.rightSide .box1 {
+  height: 29vh;
+  margin-bottom: 0.5vh;
+  position: relative;
+}
+.rightSide .box1 .chart {
+  height: 20vh;
+}
+.rightSide .box1 .list {
+  position: absolute;
+  left: 10vw;
+  top: 2vh;
+  display: flex;
+}
+.rightSide .box1 .list > li {
+  width: 100px;
+  color: #5dffff;
+}
+.rightSide .box1 .list > li > p:nth-child(1) {
+  font-size: 30px;
+  font-family: DINAlternate, DINAlternate-Bold;
+  font-weight: 700;
+}
+.rightSide .box1 .list > li > p:nth-child(2) {
+  font-size: 12px;
+}
+.rightSide .box2 {
+  margin-bottom: 0.5vh;
+  display: flex;
+}
+.rightSide .box2 .m_box {
+  padding: 2vh 20px 2vh 30px;
+}
+.rightSide .box2 .box2_1,
+.rightSide .box2 .box2_2 {
+  width: 290px;
+  height: 26vh;
+}
+.rightSide .box2 .box2_1 .detailList {
+  color: rgba(93, 255, 255, 0.6);
+  display: flex;
+  flex-wrap: nowrap;
+}
+.rightSide .box2 .box2_1 .detailList li {
+  font-size: 12px;
+  padding: 0 12px;
+  border: 1PX solid rgba(93, 255, 255, 0.6);
+  border-radius: 10px;
+}
+.rightSide .box2 .box2_1 .detailList li.active {
+  color: #5DFFFF;
+  border: 1PX solid #5DFFFF;
+  background: rgba(93, 255, 255, 0.6);
+}
+.rightSide .box2 .box2_1 .detailList > li:nth-child(1) {
+  margin-right: 8px;
+}
+.rightSide .box2 .box2_1 .chart {
+  height: 17vh;
+}
+.rightSide .box2 .box2_2 .list {
+  display: flex;
+  flex-direction: column;
+  height: 17vh;
+  overflow-y: scroll;
+}
+.rightSide .box2 .box2_2 .list .title {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  margin-bottom: 1vh;
+}
+.rightSide .box2 .box2_2 .list .title .tag {
+  color: #ff9537;
+  padding: 0 8px;
+  border: 1PX solid #ff9537;
+  background: rgba(255, 149, 55, 0.2);
+}
+.rightSide .box2 .box2_2 .list .title .date {
+  width: 60px;
+  font-size: 16px;
+}
+.rightSide .box2 .box2_2 .list .detail {
+  margin-bottom: 1vh;
+}
+.rightSide .box3 {
+  height: 26vh;
+}
+.rightSide .box3 .content {
+  height: 17vh;
+  display: flex;
+}
+.rightSide .box3 .content .list {
+  flex: 1;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.rightSide .box3 .content .list li {
+  width: 102px;
+  color: #5dffff;
+}
+.rightSide .box3 .content .list li > p:nth-child(1) {
+  font-size: 30px;
+  font-family: DINAlternate, DINAlternate-Bold;
+  font-weight: 700;
+}
+.rightSide .box3 .content .list li > p:nth-child(2) {
+  font-size: 12px;
+}
+.rightSide .box3 .content .chart {
+  width: 300px;
+  height: 17vh;
+}
+.rightSide .box3 .chart2 {
+  width: 570px;
+  height: 17vh;
+}

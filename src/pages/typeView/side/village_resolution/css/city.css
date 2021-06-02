@@ -1,0 +1,61 @@
+.m_box {
+  padding: 2.5vh 40px;
+}
+.leftSide {
+  padding-left: 50px;
+  padding-top: 1vh;
+}
+.leftSide .box1 {
+  height: 18vh;
+  margin-bottom: 4vh;
+}
+.leftSide .box1 .list {
+  display: flex;
+  height: 10vh;
+  align-items: center;
+}
+.leftSide .box1 .list li {
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+.leftSide .box1 .list li img {
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+}
+.leftSide .box1 .list li > div {
+  display: flex;
+  flex-direction: column;
+  color: #5dffff;
+}
+.leftSide .box1 .list li > div > p:nth-child(1) {
+  font-size: 30px;
+  font-family: DINAlternate, DINAlternate-Bold;
+  font-weight: 700;
+}
+.leftSide .box1 .list li > div > p:nth-child(2) {
+  font-size: 12px;
+}
+.leftSide .box2 {
+  height: 59vh;
+}
+.leftSide .box2 .chart1 {
+  height: 24vh;
+}
+.leftSide .box2 .chart2 {
+  height: 24vh;
+}
+.rightSide {
+  padding-right: 50px;
+  padding-top: 1vh;
+}
+.rightSide .box1 {
+  height: 59vh;
+}
+.rightSide .box1 .chart1 {
+  height: 24vh;
+}
+.rightSide .box1 .chart2 {
+  height: 24vh;
+}

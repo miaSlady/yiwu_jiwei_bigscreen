@@ -1,0 +1,75 @@
+.m_box {
+  padding: 2.5vh 40px;
+}
+.leftSide {
+  padding-left: 36px;
+  padding-top: 1vh;
+}
+.leftSide .box1 {
+  height: 29vh;
+  margin-bottom: 3vh;
+}
+.leftSide .box1 .list {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+}
+.leftSide .box1 .list li {
+  width: 220px;
+  display: flex;
+  align-items: flex-end;
+}
+.leftSide .box1 .list li > div:nth-child(1) {
+  flex: 1;
+}
+.leftSide .box1 .list li > div:nth-child(1) > p:nth-child(1) {
+  font-size: 30px;
+  font-family: DINAlternate, DINAlternate-Bold;
+  font-weight: 700;
+  color: #5dffff;
+}
+.leftSide .box1 .list li > div:nth-child(1) > p:nth-child(2) {
+  font-size: 12px;
+}
+.leftSide .box1 .list li > div:nth-child(2) {
+  width: 110px;
+  height: 20px;
+  position: relative;
+  top: -1vh;
+  display: flex;
+}
+.leftSide .box1 .list li > div:nth-child(2) img {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 110px;
+  height: 20px;
+}
+.leftSide .box1 .list li > div:nth-child(2) .s1 {
+  width: 0;
+  height: 20px;
+  background: #5DFFFF;
+}
+.leftSide .box1 .list li > div:nth-child(2) .s2 {
+  flex: 1;
+  background: #E6FFFF;
+}
+.leftSide .box1 .list > li:nth-child(odd) {
+  margin-right: 20px;
+}
+.leftSide .box2 {
+  height: 30vh;
+}
+.leftSide .box2 .chart {
+  height: 20vh;
+}
+.rightSide {
+  padding-right: 36px;
+  padding-top: 1vh;
+}
+.rightSide .box1 {
+  height: 30vh;
+}
+.rightSide .box1 .chart {
+  height: 20vh;
+}

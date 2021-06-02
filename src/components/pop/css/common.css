@@ -1,0 +1,112 @@
+.bg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 11;
+}
+.bg .pop {
+  position: absolute;
+  width: 75vw;
+  height: 74.78vh;
+  background: url(../img/toast_bg.png);
+  background-size: 100% 100%;
+  padding: 0 1.674vw;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+}
+.bg .pop .header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.bg .pop .header span {
+  font-size: 20px;
+  font-weight: bold;
+  text-align: left;
+  color: #22fdd9;
+  line-height: 7.4vh;
+  letter-spacing: 2px;
+  text-shadow: 5px 5px 5px #1dcec1;
+}
+.bg .pop .header img {
+  width: 22px;
+  height: 22px;
+  cursor: pointer;
+}
+.bg .pop .content {
+  padding: 0 32.14px;
+}
+.bg .pop .content .searchBox {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.bg .pop .content .searchBox .btn {
+  cursor: pointer;
+  height: 3.5vh;
+  line-height: 3.5vh;
+  padding: 0 26px;
+  border: 1px solid #054c61;
+  border-left: 2px solid #054c61;
+  border-right: 2px solid #054c61;
+}
+.bg .pop .content .searchBox .inputBox {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.bg .pop .content .searchBox .inputBox .input {
+  height: 4vh;
+  line-height: 4vh;
+  padding: 0 15px;
+  width: 200px;
+  box-sizing: border-box;
+  margin-right: 10px;
+  border: 1px solid #054c61;
+  box-shadow: 2px 2px 5px #054c61 inset, 2px 2px 5px #054c61;
+}
+.bg .pop .content .myList .head {
+  color: #B4C5F1;
+}
+.bg .pop .content .myList .head,
+.bg .pop .content .myList .body li {
+  display: flex;
+  justify-content: space-between;
+}
+.bg .pop .content .myList .head > span,
+.bg .pop .content .myList .body li > span {
+  padding: 0.8vh 5px;
+  flex: 1;
+  text-align: left;
+}
+.bg .pop .content .myList .head > span:nth-child(1),
+.bg .pop .content .myList .body li > span:nth-child(1) {
+  padding-left: 30px;
+}
+.bg .pop .content .myList .body {
+  height: 52vh;
+  overflow-y: scroll;
+  font-size: 14px;
+  cursor: pointer;
+}
+.bg .pop .content .myList .body > li:nth-child(odd) {
+  background: #152448;
+}
+.bg .pop .content .myList .noMore {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  font-size: 20px;
+  height: 10vh;
+}
+.bg .pop .content .pageBox {
+  float: right;
+  margin-top: 1vh;
+  margin-right: 20px;
+}

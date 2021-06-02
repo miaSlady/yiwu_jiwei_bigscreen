@@ -1,0 +1,82 @@
+.city .map {
+  position: absolute;
+  top: 15vh;
+  left: 560px;
+  width: 800px;
+  height: 80vh;
+}
+.city .map img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+}
+.city .map > .item {
+  transform: scale(0.8);
+  transition: all 1s linear;
+  position: absolute;
+  color: #57c7ff;
+  cursor: pointer;
+}
+.city .map > .item > span:nth-child(1) {
+  font-size: 14px;
+}
+.city .map .item.hover {
+  transform: scale(1);
+  color: #00f8c9;
+  z-index: 2;
+}
+.city .map > .box {
+  position: absolute;
+  left: 10vw;
+  top: 0;
+  background: url("../img/box.png") no-repeat;
+  background-size: 100% 100%;
+  padding: 2vh 24px;
+  color: #e6ffff;
+  min-width: 300px;
+}
+.city .map > .box > p {
+  font-size: 16px;
+  margin-bottom: 1.5vh;
+}
+.city .map > .box > ul {
+  display: flex;
+  flex-wrap: nowrap;
+}
+.city .map > .box > ul li {
+  color: #5dffff;
+  min-width: 120px;
+}
+.city .map > .box > ul li > p:nth-child(1) {
+  font-size: 14px;
+}
+.city .map > .box > ul li > p:nth-child(2) {
+  font-size: 30px;
+  font-weight: 600;
+}
+.city .map > .box > ul li .per {
+  font-size: 12px;
+}
+.city .map > .box > ul > li:nth-child(1) {
+  margin-right: 20px;
+}
+.city .map > .list {
+  position: absolute;
+  left: 3vw;
+  top: 4vh;
+}
+.city .map > .list li {
+  color: #5dffff;
+  margin-bottom: 2.5vh;
+}
+.city .map > .list li > p:nth-child(1) {
+  font-size: 16px;
+  margin-bottom: 0.5vh;
+}
+.city .map > .list li > p:nth-child(2) {
+  font-weight: 700;
+  font-size: 40px;
+  font-family: DINAlternate, DINAlternate-Bold;
+}

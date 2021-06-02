@@ -1,0 +1,161 @@
+.m_box{
+  padding:2.5vh 40px;
+}
+.leftSide{
+  padding-left: 36px;
+  padding-top: 1vh;
+  .box1{
+    height: 52vh;
+    margin-bottom: 2vh;
+    .content1{
+      height: 23vh;
+    }
+    .content2{
+      &>p{
+        font-size: 16px;
+      }
+      &>div{
+        height: 17vh;
+      }
+    }
+  }
+  .box2{
+    height: 27vh;
+    .chart{
+      height: 18vh;
+    }
+  }
+
+}
+.rightSide{
+  .box1{
+    height: 29vh;
+    margin-bottom: .5vh;
+    position: relative;
+    .chart{
+      height: 20vh;
+    }
+    .list{
+      position: absolute;
+      left:10vw;
+      top:2vh;
+      display: flex;
+      &>li{
+        width: 100px;
+        color: #5dffff;
+        &>p:nth-child(1){
+          font-size: 30px;
+          font-family: DINAlternate, DINAlternate-Bold;
+          font-weight: 700;
+        }
+        &>p:nth-child(2){
+          font-size: 12px;
+        }
+      }
+    }
+  }
+  .box2{
+    margin-bottom: .5vh;
+    display: flex;
+    .m_box{
+      padding:2vh 20px 2vh 30px;
+    }
+    .box2_1,.box2_2{
+      width: 290px;
+      height: 26vh;
+    }
+    .box2_1{
+      .detailList{
+        color:rgba(93,255,255,.6);
+        display: flex;
+        flex-wrap: nowrap;
+        li{
+          font-size: 12px;
+          padding: 0 12px;
+          border:1PX solid rgba(93,255,255,.6);
+          border-radius: 10px;
+        }
+        li.active{
+          color:#5DFFFF;
+          border:1PX solid #5DFFFF;
+          background: rgba(93,255,255,.6);
+        }
+        &>li:nth-child(1){
+          margin-right: 8px;
+        }
+      }
+      .chart{
+        height: 17vh;
+      }
+    }
+    .box2_2{
+      .list{
+        display: flex;
+        flex-direction: column;
+        height: 17vh;
+        overflow-y: scroll;
+        .title{
+          display: flex;
+          justify-content: space-between;
+          flex-wrap: nowrap;
+          margin-bottom: 1vh;
+          .tag{
+            color: #ff9537;
+            padding:0 8px;
+            border:1PX solid #ff9537;
+            background: rgba(255,149,55,0.20);
+          }
+          .date{
+            width: 60px;
+            font-size: 16px;
+          }
+        }
+        .detail{
+          margin-bottom: 1vh;
+        }
+      }
+    }
+  }
+  .box3{
+    height: 26vh;
+    .content{
+      height: 17vh;
+      display: flex;
+      .list{
+        flex:1;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        li{
+          width: 102px;
+          color: #5dffff;
+          &>p:nth-child(1){
+            font-size: 30px;
+            font-family: DINAlternate, DINAlternate-Bold;
+            font-weight: 700;
+          }
+          &>p:nth-child(2){
+            font-size: 12px;
+          }
+        }
+      }
+      .chart{
+        width: 300px;
+        height: 17vh;
+      }
+    }
+    .chart2{
+      width: 570px;
+      height: 17vh;
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
